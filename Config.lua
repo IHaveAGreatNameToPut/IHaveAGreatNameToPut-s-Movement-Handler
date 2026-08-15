@@ -1,3 +1,5 @@
+--<< Place this inside MovementHandler.lua >>--
+
 return {
 	
 	--<< DEFAULTS >>--
