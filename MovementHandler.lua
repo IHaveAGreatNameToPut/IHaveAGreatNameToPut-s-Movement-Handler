@@ -508,10 +508,10 @@ function MovementHandler:__init(): ()
 	dashLeftAnimation = animator:LoadAnimation(Animations:WaitForChild("Dashing", 9e9):WaitForChild("DashLeft",9e9)); dashLeftAnimation.Priority = Enum.AnimationPriority.Action4
 	dashRightAnimation = animator:LoadAnimation(Animations:WaitForChild("Dashing", 9e9):WaitForChild("DashRight", 9e9)); dashRightAnimation.Priority = Enum.AnimationPriority.Action4
 	
-	slideAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("Slide", 9e9)); dashAnimation.Priority = Enum.AnimationPriority.Action4
-	slideBackAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideBack", 9e9)); dashBackAnimation.Priority = Enum.AnimationPriority.Action4
-	slideLeftAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideLeft",9e9)); dashLeftAnimation.Priority = Enum.AnimationPriority.Action4
-	slideRightAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideRight", 9e9)); dashRightAnimation.Priority = Enum.AnimationPriority.Action4
+	slideAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("Slide", 9e9)); slideAnimation.Priority = Enum.AnimationPriority.Action4
+	slideBackAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideBack", 9e9)); slideBackAnimation.Priority = Enum.AnimationPriority.Action4
+	slideLeftAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideLeft",9e9)); slideLeftAnimation.Priority = Enum.AnimationPriority.Action4
+	slideRightAnimation = animator:LoadAnimation(Animations:WaitForChild("Sliding", 9e9):WaitForChild("SlideRight", 9e9)); slideRightAnimation.Priority = Enum.AnimationPriority.Action4
 	
 	sprintAnimation = Config.SprintingAnimationEnabled and animator:LoadAnimation(Animations:WaitForChild("Sprinting", 9e9):WaitForChild("Sprint", 9e9))
 	crouchAnimation = animator:LoadAnimation(Animations:WaitForChild("Crouching", 9e9):WaitForChild("CrouchIdle", 9e9))
