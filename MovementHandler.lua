@@ -13,7 +13,6 @@ local player, mouse, camera, character, humanoid, humanoidRootPart, rootJoint, r
 local dashAnimation, dashBackAnimation, dashLeftAnimation, dashRightAnimation = nil, nil, nil, nil
 local slideAnimation, slideBackAnimation, slideLeftAnimation, slideRightAnimation = nil, nil, nil, nil
 local crouchAnimation, crouchWalkAnimation, proneAnimation, proneWalkAnimation = nil, nil, nil, nil
-local vaultingAnimation, wallHopAnimation = nil, nil
 local positionCheck = nil
 local sprintAnimation = nil
 local mouseLockSpring = nil
@@ -519,9 +518,6 @@ function MovementHandler:__init(): ()
 	crouchWalkAnimation = animator:LoadAnimation(Animations:WaitForChild("Crouching", 9e9):WaitForChild("CrouchWalk", 9e9))
 	proneAnimation = animator:LoadAnimation(Animations:WaitForChild("Crouching", 9e9):WaitForChild("ProneIdle", 9e9))
 	proneWalkAnimation = animator:LoadAnimation(Animations:WaitForChild("Crouching", 9e9):WaitForChild("ProneWalk", 9e9))
-	
-	vaultingAnimation = animator:LoadAnimation(Animations:WaitForChild("Vaulting", 9e9):WaitForChild("Vault", 9e9))
-	wallHopAnimation = animator:LoadAnimation(Animations:WaitForChild("Vaulting", 9e9):WaitForChild("WallHop", 9e9))
 	
 	--<< MouseLockSpring, used for ShiftLock camera >>--
 	mouseLockSpring = Spring.new(Vector3.new())
